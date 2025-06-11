@@ -9,6 +9,8 @@ import AboutPage from "./pages/AboutPage";
 import CoursesPage from "./pages/CoursesPage";
 import AdmissionsPage from "./pages/AdmissionsPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import ChatbotComponent from "./components/Chatbot/ChatbotComponents";
+
 
 function App() {
   return (
@@ -25,7 +27,8 @@ function App() {
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
-        <Footer />
+        <ChatbotComponent/>
+        <Footer/>
       </div>
     </Router>
   );
